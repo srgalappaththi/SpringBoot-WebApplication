@@ -66,6 +66,20 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
+
+                     <plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>check</goal>
+                      </goals>
+                  </execution>
+              </executions>
+            </plugin>
+
+                     
             </plugin>
 
         </plugins>
