@@ -15,6 +15,6 @@ metadata:
     spec:
       containers:
       - name: spring-boot-web.jar
-        image: ShalikaHarshani/xyz:tag
+        image: abhishek/xyz:tag
         ports:
         - containerPort: 8081
