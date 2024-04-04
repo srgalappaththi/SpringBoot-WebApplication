@@ -3,7 +3,7 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Simply the artifact path
-ARG artifact=target/javaapp.jar
+ARG artifact=target/spring-boot-app.jar
 
 WORKDIR /opt/app
 
