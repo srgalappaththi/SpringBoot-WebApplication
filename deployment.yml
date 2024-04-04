@@ -1,21 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: javaapp
+  name: spring-boot-web.jar
   labels:
-    app: javaapp
-spec:
+    app: spring-boot-web.jar
   replicas: 1
   selector:
     matchLabels:
-      app: javaapp
+      app: spring-boot-web.jar
   template:
     metadata:
       labels:
-        app: javaapp
+        app: spring-boot-web.jar
     spec:
       containers:
-      - name: javaapp
+      - name: spring-boot-web.jar
         image: ShalikaHarshani/xyz:tag
         ports:
         - containerPort: 8081
